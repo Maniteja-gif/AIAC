@@ -1,0 +1,102 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPQWgDPG+NksL5hX+vlMTGf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Maniteja-gif/AIAC/blob/main/lab%202%20task%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "3VKGqvbFUvfU"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "cb68f095"
+      },
+      "source": [
+        "def is_armstrong_number(number):\n",
+        "  \"\"\"\n",
+        "  Checks if a number is an Armstrong number.\n",
+        "\n",
+        "  Args:\n",
+        "    number: An integer.\n",
+        "\n",
+        "  Returns:\n",
+        "    True if the number is an Armstrong number, False otherwise.\n",
+        "  \"\"\"\n",
+        "  # Convert the number to a string to easily access individual digits\n",
+        "  num_str = str(number)\n",
+        "  num_digits = len(num_str)\n",
+        "  armstrong_sum = 0\n",
+        "\n",
+        "  # Calculate the sum of each digit raised to the power of the number of digits\n",
+        "  for digit in num_str:\n",
+        "    armstrong_sum += int(digit) ** num_digits\n",
+        "\n",
+        "  # Check if the sum equals the original number\n",
+        "  return armstrong_sum == number\n",
+        "\n",
+        "# Example usage:\n",
+        "print(f\"Is 153 an Armstrong number? {is_armstrong_number(153)}\")\n",
+        "print(f\"Is 9 an Armstrong number? {is_armstrong_number(9)}\")\n",
+        "print(f\"Is 10 an Armstrong number? {is_armstrong_number(10)}\")\n",
+        "print(f\"Is 9474 an Armstrong number? {is_armstrong_number(9474)}\")\n",
+        "print(f\"Is 123 an Armstrong number? {is_armstrong_number(123)}\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "def is_armstrong_number(number):: This line defines a Python function named is_armstrong_number that takes one argument, number. This number is the integer you want to check.\n",
+        "Docstring: The triple-quoted string explains the purpose of the function, its arguments (Args), and what it returns (Returns).\n",
+        "num_str = str(number): This line converts the input integer number into a string. This is done so that you can easily iterate through each digit of the number.\n",
+        "num_digits = len(num_str): This calculates the number of digits in the original number by getting the length of the string representation.\n",
+        "armstrong_sum = 0: This initializes a variable armstrong_sum to 0. This variable will store the sum of the digits raised to the power of the number of digits.\n",
+        "for digit in num_str:: This starts a loop that iterates through each character (digit) in the num_str string.\n",
+        "armstrong_sum += int(digit) ** num_digits: Inside the loop:\n",
+        "int(digit): Converts the current digit (which is a character in the string) back into an integer.\n",
+        "** num_digits: Raises the integer value of the digit to the power of num_digits (the total number of digits in the original number).\n",
+        "armstrong_sum += ...: Adds the result of the exponentiation to the armstrong_sum.\n",
+        "return armstrong_sum == number: After the loop finishes, this line checks if the calculated armstrong_sum is equal to the original number.\n",
+        "If they are equal, the function returns True, indicating that the number is an Armstrong number.\n",
+        "If they are not equal, the function returns False.\n",
+        "The code then includes example usage, calling the function with different numbers and printing whether they are Armstrong numbers or not.\n",
+        "\n",
+        "In simple terms, the function takes a number, breaks it down into its digits, raises each digit to the power of the total number of digits, sums up these results, and finally checks if this sum is the same as the original number.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "W-2iNHkAZJoU"
+      }
+    }
+  ]
+}
