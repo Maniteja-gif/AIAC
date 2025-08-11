@@ -1,0 +1,113 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPLI0LziW2MXvt1qBU7jAzM",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Maniteja-gif/AIAC/blob/main/lab%202_1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "3VKGqvbFUvfU"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "a481ed9d"
+      },
+      "source": [
+        "def calculate_stats(numbers):\n",
+        "  \"\"\"\n",
+        "  Calculates the mean, minimum, and maximum of a list of numbers.\n",
+        "\n",
+        "  Args:\n",
+        "    numbers: A list of numbers.\n",
+        "\n",
+        "  Returns:\n",
+        "    A tuple containing the mean, minimum, and maximum values.\n",
+        "    Returns (None, None, None) if the input list is empty.\n",
+        "  \"\"\"\n",
+        "  if not numbers:\n",
+        "    return None, None, None\n",
+        "\n",
+        "  mean_value = sum(numbers) / len(numbers)\n",
+        "  min_value = min(numbers)\n",
+        "  max_value = max(numbers)\n",
+        "\n",
+        "  return mean_value, min_value, max_value\n",
+        "\n",
+        "# Example usage:\n",
+        "my_list = [10, 20, 30, 40, 50]\n",
+        "mean, minimum, maximum = calculate_stats(my_list)\n",
+        "\n",
+        "print(f\"List: {my_list}\")\n",
+        "print(f\"Mean: {mean}\")\n",
+        "print(f\"Minimum: {minimum}\")\n",
+        "print(f\"Maximum: {maximum}\")\n",
+        "\n",
+        "empty_list = []\n",
+        "mean, minimum, maximum = calculate_stats(empty_list)\n",
+        "print(f\"\\nList: {empty_list}\")\n",
+        "print(f\"Mean: {mean}\")\n",
+        "print(f\"Minimum: {minimum}\")\n",
+        "print(f\"Maximum: {maximum}\")"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "def calculate_stats(numbers):: This line defines a Python function named calculate_stats that takes one argument, numbers. The numbers argument is expected to be a list of numerical values.\n",
+        "Docstring: The triple-quoted string below the function definition is a docstring. It explains what the function does, its arguments (Args), and what it returns (Returns). This is good practice for documenting your code.\n",
+        "if not numbers:: This checks if the input list numbers is empty. If it is empty, the condition is true.\n",
+        "return None, None, None: If the list is empty, the function returns a tuple of three None values. This is a way to handle the case where calculations like mean, min, or max are not possible for an empty list.\n",
+        "mean_value = sum(numbers) / len(numbers): If the list is not empty, this line calculates the mean.\n",
+        "sum(numbers): This built-in Python function calculates the sum of all elements in the numbers list.\n",
+        "len(numbers): This built-in Python function returns the number of elements in the numbers list.\n",
+        "The sum is divided by the length to get the average (mean).\n",
+        "min_value = min(numbers): This line uses the built-in min() function to find the smallest value in the numbers list.\n",
+        "max_value = max(numbers): This line uses the built-in max() function to find the largest value in the numbers list.\n",
+        "return mean_value, min_value, max_value: The function returns a tuple containing the calculated mean, minimum, and maximum values in that order.\n",
+        "# Example usage:: This is a comment indicating the start of the example code that demonstrates how to use the function.\n",
+        "my_list = [10, 20, 30, 40, 50]: This creates a list named my_list with some sample numbers.\n",
+        "mean, minimum, maximum = calculate_stats(my_list): This calls the calculate_stats function with my_list as input. The returned tuple of values is unpacked into three separate variables: mean, minimum, and maximum.\n",
+        "print(f\"List: {my_list}\"): This prints the original list. The f\"\" syntax is a formatted string literal (f-string) which allows embedding the value of variables directly within the string.\n",
+        "print(f\"Mean: {mean}\"): This prints the calculated mean.\n",
+        "print(f\"Minimum: {minimum}\"): This prints the calculated minimum.\n",
+        "print(f\"Maximum: {maximum}\"): This prints the calculated maximum.\n",
+        "empty_list = []: This creates an empty list named empty_list to demonstrate how the function handles empty input.\n",
+        "mean, minimum, maximum = calculate_stats(empty_list): This calls the calculate_stats function with the empty_list. Since the list is empty, the function will return None, None, None, and these values will be assigned to the variables.\n",
+        "The final print statements: These lines print the empty list and the None values returned by the function for the empty list case."
+      ],
+      "metadata": {
+        "id": "tqC95QXGXYAT"
+      }
+    }
+  ]
+}
